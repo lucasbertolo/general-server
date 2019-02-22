@@ -10,7 +10,7 @@ const handleEmail = (req, res, nodemailer) => {
 
   const {email, name, message, phone} = req.body;
 
-  if(!email || !name || !message || !phone){
+  if(!email || !name){
     return res.status(400).json('Empty field')
   }
 
