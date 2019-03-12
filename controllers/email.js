@@ -16,7 +16,7 @@ const handleEmail = (req, res, nodemailer) => {
 
   let mailOptions = {
       from: 'aneospes@gmail.com',
-      to: 'lais.msalvador@gmail.com',
+      to: 'lms.arquitetura@outlook.com',
       subject: "Contato site",
       html: 
             `
