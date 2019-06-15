@@ -16,7 +16,7 @@ const handleEmail = (req, res, nodemailer, receiver) => {
 
   let mailOptions = {
       from: 'aneospes@yahoo.com',
-      to: props.receiver,
+      to: receiver,
       subject: "Contato site",
       html: 
             `
