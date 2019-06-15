@@ -1,4 +1,4 @@
-const handleEmail = (req, res, nodemailer) => {
+const handleEmail = (req, res, nodemailer, receiver) => {
 
 	const transporter = nodemailer.createTransport({
    service: process.env.NODEMAILER_SERVICE,
@@ -15,8 +15,8 @@ const handleEmail = (req, res, nodemailer) => {
   }
 
   let mailOptions = {
-      from: 'aneospes@gmail.com',
-      to: 'lms.arquitetura@outlook.com',
+      from: 'aneospes@yahoo.com',
+      to: props.receiver,
       subject: "Contato site",
       html: 
             `

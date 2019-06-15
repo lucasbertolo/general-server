@@ -10,7 +10,8 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.get('/', (req,res)=> {res.send('this is working')});
-app.post('/contact', (req, res) => {email.handleEmail(req, res, nodemailer)});
+app.post('/contactLMS', (req, res) => {email.handleEmail(req, res, nodemailer, 'lms.arquitetura@outlook.com')});
+app.post('/contactLucasBertolo', (req, res) => {email.handleEmail(req, res, nodemailer, 'lucasbertolo2@gmail.com')});
 
 const PORT = process.env.PORT;
 app.listen(PORT, ()=>{
